@@ -1,0 +1,17 @@
+[user]
+	name = Alexey Chernikov
+	email = alexey.chernikov@gmail.com
+[color]
+	ui = auto
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[giggle]
+	compact-mode = false
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	file-view-vpane-position = 596
+	main-window-view = HistoryView
+	history-view-vpane-position = 698
+	file-view-hpane-position = 393
+[push]
+	default = matching

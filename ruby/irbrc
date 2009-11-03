@@ -1,0 +1,75 @@
+begin
+  # load wirble
+  require 'rubygems'
+  require 'wirble'
+
+  colors = Wirble::Colorize.colors.merge({
+  # set the comma color to blue
+     :open_string => :light_green,
+     :close_string => :light_green,
+     :string => :light_green,
+     :open_array => :red,
+     :close_array => :red,
+     :open_hash => :red,
+     :close_hash => :red,
+     :comma => :purple
+  })
+
+  # set the colors used by Wirble
+  Wirble::Colorize.colors = colors
+
+  # start wirble (with color)
+  Wirble.init
+  Wirble.colorize
+rescue LoadError => err
+  warn "Couldn't load Wirble: #{err}"
+end
+
+class Object
+  def local_methods
+    (methods - Object.instance_methods).sort
+  end
+end
+
+alias q exit
+
+if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+   require 'logger'
+   RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
+end
+
+#require 'pp'
+
+if rails_env = ENV['RAILS_ENV']
+  require 'hirb'
+  Hirb.enable
+
+  rails_root = File.basename(Dir.pwd)
+
+  rails_env_string = case rails_env
+  when 'development'
+    'dev'
+  when 'production'
+    'prod'
+  else
+    rails_env
+  end
+
+  IRB.conf[:PROMPT] ||= {}
+  IRB.conf[:PROMPT][:RAILS] = {
+    # :PROMPT_I => "\e[0;34m#{rails_root}@\e[0;35m#{rails_env_string}\e[0m > ",
+    :PROMPT_I => "#{rails_root}@#{rails_env_string} > ",
+    :PROMPT_S => "#{rails_root}@#{rails_env_string} * ",
+    :PROMPT_C => "#{rails_root}@#{rails_env_string} ? ",
+    :RETURN => "=> %s\n"
+  }
+  IRB.conf[:PROMPT_MODE] = :RAILS
+
+  # Called after the irb session is initialized and Rails has
+  # been loaded (props: Mike Clark).
+  IRB.conf[:IRB_RC] = Proc.new do
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+    ActiveRecord::Base.instance_eval { alias :[] :find }
+    alias :r! :reload!
+  end
+end
