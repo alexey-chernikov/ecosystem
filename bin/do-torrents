@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sshfs router:/home/alex/torrents /home/alex/mount/torrents/
