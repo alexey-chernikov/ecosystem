@@ -1,0 +1,26 @@
+source ~/.vim/vimrc
+"========= Alexey Chernikov additions ==============
+colorscheme vibrantink
+"*** Keybindings
+vmap <C-C> "+yi
+imap <C-V> <ESC>"+gPi
+" Insert mode navigation
+imap <C-J> <Down>
+imap <C-K> <Up>
+imap <C-H> <Left>
+imap <C-L> <Right>
+
+" Maximize window
+if has("gui_running")
+    set lines=999
+    set columns=999
+endif
+
+" Hide toolbar in gui
+set guioptions-=T
+
+" NERDTree mapping
+map <C-t> :NERDTreeToggle<CR>
+
+set nu "Line numbers
+set fileencodings=utf8,cp1251 "Encoding order
