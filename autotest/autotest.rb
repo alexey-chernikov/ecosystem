@@ -1,5 +1,4 @@
 #require "redgreen/autotest"
-$KCODE = 'U'
 module Autotest::GnomeNotify
   # Time notification will be displayed before disappearing automatically
   EXPIRATION_IN_SECONDS = 2
