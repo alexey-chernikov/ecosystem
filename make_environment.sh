@@ -13,5 +13,5 @@ ln -f $path/autotest/autotest.rb ~/.autotest
 
 ln -f $path/vim/vimrc ~/.vimrc
 
-mkdir ~/.mplayer
+mkdir ~/.mplayer 2>/dev/null
 ln -f $path/mplayer/config ~/.mplayer/config
