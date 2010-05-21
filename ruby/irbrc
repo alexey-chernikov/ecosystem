@@ -1,6 +1,6 @@
+require 'rubygems'
 begin
   # load wirble
-  require 'rubygems'
   require 'wirble'
 
   colors = Wirble::Colorize.colors.merge({
@@ -23,6 +23,12 @@ begin
   Wirble.colorize
 rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
+end
+
+begin
+  require 'interactive_editor'
+rescue
+  warn "Install interactive_editor gem: sudo gem install interactive_editor"
 end
 
 class Object
