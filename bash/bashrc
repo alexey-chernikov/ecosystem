@@ -101,7 +101,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export PS1='\[\e[1;32m\][\A] \[\e[0;34m\]\u@\[\e[0;35m\]\H \[\e[1;31m\]\w\[\e[0m\]\n\$ '
-export PATH="$PATH:/home/alex/.bin:/home/alex/.ecosystem/bin"
+export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin"
 
 alias less='less -R'
 alias upgrade='sudo apt-get upgrade'

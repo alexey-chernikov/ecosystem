@@ -1,0 +1,7 @@
+[default]
+ontop=yes
+vf-add=pp
+autoq=6
+softvol=yes
+softvol-max=300
+cache=5000
