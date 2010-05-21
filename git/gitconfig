@@ -15,3 +15,5 @@
 	file-view-hpane-position = 393
 [push]
 	default = matching
+[core]
+	excludesfile = ~/.gitignore
