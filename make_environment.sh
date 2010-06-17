@@ -8,9 +8,8 @@ ln -f $path/ruby/gemrc ~/.gemrc
 ln -f $path/ruby/irbrc ~/.irbrc
 
 ln -f $path/git/gitconfig ~/.gitconfig
-
+ln -f $path/git/gitignore ~/.gitignore
 ln -f $path/autotest/autotest.rb ~/.autotest
-
 ln -f $path/vim/vimrc ~/.vimrc
 
 mkdir ~/.mplayer 2>/dev/null
