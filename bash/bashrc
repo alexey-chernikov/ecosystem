@@ -115,7 +115,7 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-source ~/.ec2/config
+[ -x .ec2 ] && source ~/.ec2/config
 
 down_deposit()
 {
