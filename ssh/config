@@ -3,3 +3,7 @@ HashKnownHosts no
 Host php-fpm
   ProxyCommand ssh -q rb7.ru nc %h %p $*
   HostName php-fpm
+Host wdtv
+  User root
+Host router
+  User root
