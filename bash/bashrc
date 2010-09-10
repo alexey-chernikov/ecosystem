@@ -94,7 +94,7 @@ if [ -n "$PS1" ] ; then
         . /etc/bash_completion
     fi
 
-    export PS1='\[\e[1;32m\][\A] \[\e[0;34m\]\u@\[\e[1;35m\]\H \[\e[1;31m\]\w\[\e[0;33m\]$(git branch --no-color 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/[\1]/") \[\e[0;36m\]$(ruby -v | sed "s/ruby \([0-9\.]*\).*/\1/")\[\e[0m\]\n\$ '
+    export PS1='\[\e[1;32m\][\A] \[\e[0;34m\]\u@\[\e[1;35m\]\H \[\e[1;31m\]\w\[\e[0;33m\]$(git branch --no-color 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/[\1]/") \[\e[0;36m\]$(ruby -e "puts RUBY_VERSION" 2>/dev/null)\[\e[0m\]\n\$ '
     export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin"
 
     alias less='less -R'
