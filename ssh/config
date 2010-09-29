@@ -7,6 +7,10 @@ Host wdtv
   User root
 Host router
   User root
-Host yjin-home
+Host yjin-router
   HostName 57229-local.dyn.ufanet.ru
   User root
+Host yjin-home
+  Hostname 192.168.111.139
+Host yjin-work
+  Hostname 192.168.1.139
