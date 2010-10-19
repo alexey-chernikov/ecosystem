@@ -100,7 +100,7 @@ if [ -n "$PS1" ] ; then
         local version=$(ruby -e "puts RUBY_ENGINE + ' ' + RUBY_VERSION" 2>/dev/null)
         [ "$version" != "" ] && version="$version"
         local full="$version$gemset"
-        [ "$full" != "" ] && echo "rvm $full "
+        [ "$full" != "" ] && echo "rvm@$full "
         [ "$full" == "" ] && echo `ruby -e "puts 'sys@ruby ' + RUBY_VERSION"`
     }
 
