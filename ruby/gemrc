@@ -1,4 +1,6 @@
-rdoc: --inline-source --line-numbers --format=html --template=hanna
+rdoc: --inline-source --line-numbers
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
 --- 
 :benchmark: false
 :verbose: true
