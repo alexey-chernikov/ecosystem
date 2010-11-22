@@ -47,8 +47,13 @@ end
 #require 'pp'
 
 if rails_env = ENV['RAILS_ENV']
-  require 'hirb'
-  Hirb.enable
+  print "Rails environment detected: #{rails_env}...\n"
+  begin
+    require 'hirb'
+    Hirb.enable
+  rescue
+    print "Please install hirb gem\n"
+  end
 
   rails_root = File.basename(Dir.pwd)
 
@@ -78,4 +83,6 @@ if rails_env = ENV['RAILS_ENV']
     ActiveRecord::Base.instance_eval { alias :[] :find }
     alias :r! :reload!
   end
+else
+  print "Non rails environment...\n"
 end
