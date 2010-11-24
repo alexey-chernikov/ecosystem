@@ -1,3 +1,4 @@
+# encoding: utf-8
 #require "redgreen/autotest"
 module Autotest::GnomeNotify
   # Time notification will be displayed before disappearing automatically
