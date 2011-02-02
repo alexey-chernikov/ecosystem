@@ -14,3 +14,9 @@ Host yjin-home
   Hostname 192.168.111.139
 Host yjin-work
   Hostname 192.168.1.139
+Host askino
+  ProxyCommand ssh -q bashzan.ru nc %h %p $*
+  Hostname askino.local
+Host oktjabr
+  ProxyCommand ssh -q bashzan.ru nc %h %p $*
+  Hostname oktjabr.local

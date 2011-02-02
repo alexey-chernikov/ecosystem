@@ -46,8 +46,8 @@ end
 
 #require 'pp'
 
-if rails_env = ENV['RAILS_ENV']
-  print "Rails environment detected: #{rails_env}...\n"
+if Rails
+  print "Rails environment detected: #{Rails.env}...\n"
   begin
     require 'hirb'
     Hirb.enable
@@ -57,13 +57,13 @@ if rails_env = ENV['RAILS_ENV']
 
   rails_root = File.basename(Dir.pwd)
 
-  rails_env_string = case rails_env
+  rails_env_string = case Rails.env
   when 'development'
     'dev'
   when 'production'
     'prod'
   else
-    rails_env
+    Rails.env
   end
 
   IRB.conf[:PROMPT] ||= {}
