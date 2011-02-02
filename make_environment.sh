@@ -6,6 +6,7 @@ ln -f $path/bash/bashrc ~/.bashrc
 
 ln -f $path/ruby/gemrc ~/.gemrc
 ln -f $path/ruby/irbrc ~/.irbrc
+ln -f $path/ruby/rvmrc ~/.rvmrc
 
 ln -f $path/git/gitconfig ~/.gitconfig
 ln -f $path/git/gitignore ~/.gitignore
