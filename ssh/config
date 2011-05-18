@@ -17,3 +17,6 @@ Host yjin-work
 Host shiva
   User root
   Hostname 192.168.0.2
+Host *
+  ControlMaster auto
+  ControlPath /tmp/%r@%h:%p
