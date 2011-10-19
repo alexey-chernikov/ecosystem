@@ -7,6 +7,8 @@ Host wdtv
   User root
 Host router
   User root
+Host bahamut
+  User root
 Host yjin-router
   HostName 57229-local.dyn.ufanet.ru
   User root
