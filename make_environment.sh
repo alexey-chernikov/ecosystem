@@ -3,6 +3,7 @@
 path=`dirname $0`
 
 ln -f $path/bash/bashrc ~/.bashrc
+ln -f $path/bash/bash_profile ~/.bash_profile
 
 ln -f $path/ruby/gemrc ~/.gemrc
 ln -f $path/ruby/irbrc ~/.irbrc
