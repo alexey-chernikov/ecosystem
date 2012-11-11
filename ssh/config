@@ -3,6 +3,9 @@ HashKnownHosts no
 Host php-fpm
   ProxyCommand ssh -q rb7.ru nc %h %p $*
   HostName php-fpm
+Host b365
+  ProxyCommand ssh -q rb7.ru nc %h %p $*
+  HostName business365-site
 Host wdtv
   User root
 Host router
@@ -19,6 +22,23 @@ Host yjin-work
 Host shiva
   User root
   Hostname 192.168.0.2
+Host dg
+  User deploy
+  Hostname german.server.techinform-ufa.ru
+Host kiosk
+  ProxyCommand ssh -q agidel.local nc %h %p $*
+  HostName 192.168.1.33
+Host nissan
+  User u36298
+  HostName u36298.ssh.masterhost.ru
+Host honda
+  User u281226
+  HostName u281226.ssh.masterhost.ru
+Host xbian
+  User pi
+Host xbmc
+  HostName 192.168.0.147
+  User pi
 Host *
   ControlMaster auto
   ControlPath /tmp/%r@%h:%p
