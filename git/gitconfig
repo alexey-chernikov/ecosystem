@@ -5,6 +5,10 @@
 	ui = auto
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  cb = checkout -b
+  cd = checkout
+  dir = branch
+  free = branch -D
 [giggle]
 	compact-mode = false
 	main-window-maximized = true
@@ -17,3 +21,7 @@
 	default = matching
 [core]
 	excludesfile = ~/.gitignore
+[credential]
+  helper = cache --timeout=3600
+[url "git@techinform-ufa.ru:"]
+  pushInsteadOf = tech:
