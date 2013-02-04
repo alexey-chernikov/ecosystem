@@ -1,30 +1,28 @@
 HashKnownHosts no
 
-Host php-fpm
-  ProxyCommand ssh -q rb7.ru nc %h %p $*
+Host php-fpm-old
+  ProxyCommand ssh -q main.rb7.ru nc %h %p $*
   HostName php-fpm
 Host b365
   ProxyCommand ssh -q rb7.ru nc %h %p $*
   HostName business365-site
-Host wdtv
-  User root
+Host dg
+  User deploy
+  HostName german.server.techinform-ufa.ru
+Host g
+  HostName german.server.techinform-ufa.ru
+Host b
+  HostName bashzan.ru
+Host db
+  User deploy
+  HostName bashzan.ru
 Host router
   User root
 Host bahamut
   User root
-Host yjin-router
-  HostName 57229-local.dyn.ufanet.ru
-  User root
-Host yjin-home
-  Hostname 192.168.111.139
-Host yjin-work
-  Hostname 192.168.1.139
 Host shiva
   User root
   Hostname 192.168.0.2
-Host dg
-  User deploy
-  Hostname german.server.techinform-ufa.ru
 Host kiosk
   ProxyCommand ssh -q agidel.local nc %h %p $*
   HostName 192.168.1.33
@@ -42,3 +40,17 @@ Host xbmc
 Host *
   ControlMaster auto
   ControlPath /tmp/%r@%h:%p
+Host m2
+  User root
+Host php-server
+  ProxyCommand ssh -q german.server.techinform-ufa.ru nc %h %p $*
+  HostName php-server
+Host nissan
+  User u36298
+  Hostname u36298.ftp.masterhost.ru
+Host ms2
+  User user
+  Port 2222
+  HostName ms2
+Host myvpn
+  Hostname ec2-23-23-158-222.compute-1.amazonaws.com

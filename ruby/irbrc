@@ -81,6 +81,7 @@ if Rails
   IRB.conf[:IRB_RC] = Proc.new do
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.instance_eval { alias :[] :find }
+    extend Rails::ConsoleMethods if Rails.version > "3.2.1"
     #alias :r! :reload!
   end
 else

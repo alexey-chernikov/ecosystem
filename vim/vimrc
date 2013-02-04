@@ -10,12 +10,6 @@ imap <C-K> <Up>
 imap <C-H> <Left>
 imap <C-L> <Right>
 
-" Maximize window
-if has("gui_running")
-    set lines=999
-    set columns=999
-endif
-
 " Hide toolbar in gui
 set guioptions-=T
 
