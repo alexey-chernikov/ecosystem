@@ -81,7 +81,7 @@ if Rails
   IRB.conf[:IRB_RC] = Proc.new do
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.instance_eval { alias :[] :find }
-    alias :r! :reload!
+    #alias :r! :reload!
   end
 else
   print "Non rails environment...\n"
