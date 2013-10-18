@@ -4,11 +4,12 @@
 [color]
 	ui = auto
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   cb = checkout -b
   cd = checkout
   dir = branch
   free = branch -D
+  news = log -p HEAD@{1}..HEAD@{0}
 [giggle]
 	compact-mode = false
 	main-window-maximized = true

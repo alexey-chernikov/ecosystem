@@ -25,12 +25,6 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
-begin
-  require 'interactive_editor'
-rescue
-  warn "Install interactive_editor gem: sudo gem install interactive_editor"
-end
-
 class Object
   def local_methods
     (methods - Object.instance_methods).sort

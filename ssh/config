@@ -37,9 +37,9 @@ Host xbian
 Host xbmc
   HostName 192.168.0.147
   User pi
-Host *
-  ControlMaster auto
-  ControlPath /tmp/%r@%h:%p
+#Host *
+#  ControlMaster auto
+#  ControlPath /tmp/%r@%h:%p
 Host m2
   User root
 Host php-server
@@ -54,3 +54,17 @@ Host ms2
   HostName ms2
 Host myvpn
   Hostname ec2-23-23-158-222.compute-1.amazonaws.com
+Host php-server-beta
+  ProxyCommand ssh -q beta.server.techinform-ufa.ru nc %h %p $*
+  Hostname php-server-beta
+Host ir
+  Hostname innovaterussia.ru
+  User root
+Host dc
+  Hostname champion.server.techinform-ufa.ru
+  User deploy
+Host mega
+  Hostname 10.236.24.27
+  User techinform
+Host ryjin
+  Hostname 192.168.2.18

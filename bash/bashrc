@@ -64,14 +64,9 @@ if [ -n "$PS1" ] ; then
         ;;
     esac
 
-    # Alias definitions.
-    # You may want to put all your additions into a separate file like
-    # ~/.bash_aliases, instead of adding them here directly.
-    # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-    #if [ -f ~/.bash_aliases ]; then
-    #    . ~/.bash_aliases
-    #fi
+    if [ -f ~/.bash_aliases ]; then
+        . ~/.bash_aliases
+    fi
 
     # enable color support of ls and also add handy aliases
     if [ -x /usr/bin/dircolors ]; then
@@ -79,10 +74,6 @@ if [ -n "$PS1" ] ; then
         alias ls='ls --color=auto'
 
         alias grep='grep --color=auto'
-        alias a='AUTOFEATURE=true autospec'
-        alias s='spork rspec & spork cucumber &'
-        #alias fgrep='fgrep --color=auto'
-        #alias egrep='egrep --color=auto'
     fi
 
     alias la='ls -la'
@@ -109,7 +100,6 @@ if [ -n "$PS1" ] ; then
     export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin:/home/alex/work/android-sdk-linux/platform-tools"
 
     alias less='less -R'
-    alias upgrade='sudo apt-get upgrade'
 
     export LESS_TERMCAP_mb=$'\E[01;31m'
     export LESS_TERMCAP_md=$'\E[01;31m'
