@@ -14,6 +14,7 @@ ln -f $path/git/gitignore ~/.gitignore
 ln -f $path/autotest/autotest.rb ~/.autotest
 ln -f $path/vim/vimrc ~/.vimrc
 ln -f $path/ssh/config ~/.ssh/config
+ln -f $path/tmux/tmux.conf ~/.tmux.conf
 
 mkdir ~/.mplayer 2>/dev/null
 ln -f $path/mplayer/config ~/.mplayer/config
