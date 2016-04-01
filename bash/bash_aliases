@@ -1,0 +1,8 @@
+alias dg='ssh deploy@techinform.pro'
+alias dc='ssh deploy@championnet.ru'
+alias ag='ssh techinform.pro'
+alias ac='ssh championnet.ru'
+
+alias br='bundle exec rake'
+
+alias la='ls -la'
