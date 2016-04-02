@@ -40,6 +40,10 @@ end
 
 #require 'pp'
 
+if defined?(Rails::Console)
+	  ActiveRecord::Base.logger = Logger.new(STDOUT)
+end
+
 if Rails
   print "Rails environment detected: #{Rails.env}...\n"
   begin
