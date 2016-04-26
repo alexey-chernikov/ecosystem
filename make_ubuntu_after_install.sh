@@ -5,7 +5,7 @@
 #sudo add-apt-repository ppa:wine/wine-builds
 #sudo apt update
 
-sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh
+sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common
 
 # Developer packages
 sudo apt install mysql-server libmysqlclient-dev build-essential
