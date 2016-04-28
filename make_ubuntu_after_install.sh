@@ -9,13 +9,14 @@
 #ln -sf $DATA_FOLDER/Загрузки ~/Загрузки
 #ln -sf $DATA_FOLDER/Dropbox ~/Dropbox
 
-sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm
+sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm youtube-dl vlc unity-tweak-tool
+
+sudo apt remove thunderbird
 
 # Developer packages
-sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql libpq-dev pgadmin3
-
+sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager
 # Home packages
-#sudo apt install kodi 
+#sudo apt install kodi deluge colibri
 
 # RVM install
 #gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
