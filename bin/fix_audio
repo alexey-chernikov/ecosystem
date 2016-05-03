@@ -1,0 +1,84 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+
+class Pulseaudio
+  attr_reader :data
+
+  def initialize
+    @info = `pacmd list-cards`
+    @data = []
+    remove_first_line
+    fill_cards_info
+  end
+
+  def get_value(name, context)
+    /#{name} = "(?<value>.+)"/.match(context)['value']
+  end
+
+  def fill_cards_info
+    @info.split('index: ').each do |card_info|
+      next if card_info.strip.empty?
+      card_index = card_info[0].to_i
+      @data[card_index] = {}
+      card_data = @data[card_index]
+      card_data[:card_name] = get_value('alsa.card_name', card_info)
+      card_data[:profiles] = get_profiles(card_info)
+      card_data[:ports] = fill_ports(card_info)
+    end
+  end
+
+  def fill_ports(context)
+    context = context.split('ports:').last
+    ports = []
+    context.split(/\n\t\t(?=\w)/).reject{ |i| i.empty? }.each do |line|
+      m = /^(?<code>[^:]+):\s(?<description>[^\n\t]+)/.match(line)
+      port = { code: m['code'], description: m['description'] }
+      m = /device\.product\.name = \"(?<device>[^"]+)\"/.match(line)
+      port[:device] = m['device'].strip unless m.nil?
+      port[:name] = port[:description].split(' (').first
+      port[:number] = port[:name].gsub(/[^\d]+/, '').to_i
+      ports << port
+    end
+    ports
+  end
+
+  def get_profiles(context)
+    context = context.split('profiles:').last
+    profiles = []
+    context.split("\n\t\t").each do |line|
+      next if line.empty?
+
+      m = /(?<name>output:[^:]+): (?<description>.+)/.match(line)
+      next if m.nil?
+      profile = { name: m['name'], description: m['description'] }
+      m = /\((?<output>.+)\).+\(.+\)/.match(m['description'])
+      profile[:output] = m['output'] unless m.nil?
+      profile[:number] = profile[:output].gsub(/[^\d]+/, '').to_i unless m.nil?
+      profiles << profile
+    end
+    profiles
+  end
+
+  def remove_first_line
+    data = @info.split("\n")
+    data.shift
+    @info = data.join("\n")
+  end
+end
+
+`yamaha 1 &`
+
+data = Pulseaudio.new.data
+# Find Nvidia card
+card = data.find{ |c| c[:card_name] == 'HDA NVidia' }
+puts "Found card #{card[:card_name]}"
+port = card[:ports].find{ |p| p[:device] == 'LG TV' || p[:device] == 'RX-V675' }
+puts "Found port #{port.inspect}"
+profile = card[:profiles].find{ |p| p[:number] == port[:number] && p[:description].include?('5.1') }
+puts "Found profile #{profile.inspect}"
+
+command = "pactl set-card-profile #{data.index(card)} #{profile[:name]}"
+`#{command}`
+puts "Executed #{command}"
+`notify-send -i notification-audio-play '#{command}'`
+
