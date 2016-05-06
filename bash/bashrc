@@ -142,3 +142,4 @@ fi
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+export ANDROID_HOME=/home/alex/Android/Sdk
