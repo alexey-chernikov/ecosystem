@@ -9,7 +9,7 @@
 #ln -sf $DATA_FOLDER/Загрузки ~/Загрузки
 #ln -sf $DATA_FOLDER/Dropbox ~/Dropbox
 
-sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm youtube-dl vlc unity-tweak-tool pv pavucontrol cifs-utils
+sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm youtube-dl vlc unity-tweak-tool pv pavucontrol cifs-utils whois
 
 sudo apt remove thunderbird
 
