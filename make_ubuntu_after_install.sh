@@ -14,7 +14,7 @@ sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras ste
 sudo apt remove thunderbird
 
 # Developer packages
-sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager android-tools-adb pwgen
+sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager android-tools-adb pwgen meld
 # Home packages
 #sudo apt install kodi deluge calibre
 
