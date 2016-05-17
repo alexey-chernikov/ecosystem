@@ -68,3 +68,5 @@ Host mega
   User techinform
 Host ryjin
   Hostname 192.168.2.18
+Host orenburg
+  Hostname 176.28.64.138
