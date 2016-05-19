@@ -16,8 +16,6 @@ Host b
 Host db
   User deploy
   HostName bashzan.ru
-Host router
-  User root
 Host bahamut
   User root
 Host shiva
