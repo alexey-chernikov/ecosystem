@@ -36,7 +36,6 @@ sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench
 #Ubuntu Make
 #sudo apt install ubuntu-make
 
-
 #Interesting stuff
 #sudo apt-get install bleachbit libdvd-pkg
 
