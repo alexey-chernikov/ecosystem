@@ -68,3 +68,6 @@ Host ryjin
   Hostname 192.168.2.18
 Host orenburg
   Hostname 176.28.64.138
+Host beta
+  Hostname beta.server.techinform.pro
+  Port 2222
