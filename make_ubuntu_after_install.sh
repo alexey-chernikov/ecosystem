@@ -3,6 +3,7 @@
 #sudo add-apt-repository ppa:webupd8team/java
 #sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 #sudo add-apt-repository ppa:wine/wine-builds
+#sudo add-apt-repository ppa:libretro/stable # Retroarch PPA
 #sudo apt update
 
 #DATA_FOLDER=/media/data
