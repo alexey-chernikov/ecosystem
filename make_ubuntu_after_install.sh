@@ -12,12 +12,12 @@
 #ln -sf $DATA_FOLDER/$dir ~/$dir
 #done
 
-sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm youtube-dl vlc unity-tweak-tool pv pavucontrol cifs-utils whois filezilla compizconfig-settings-manager rkhunter workrave
+sudo apt install vim-gtk3 nvidia-settings guake git ubuntu-restricted-extras steam shutter nautilus-dropbox flashplugin-installer xubuntu-community-wallpapers-xenial unity-tweak-tool libavcodec-extra htop nmap keepassx mc doublecmd-gtk ncdu guake-indicator gimp doublecmd-gtk p7zip synaptic wmctrl ssh nfs-common tmux pidgin system-config-lvm youtube-dl vlc unity-tweak-tool pv pavucontrol cifs-utils whois filezilla compizconfig-settings-manager rkhunter workrave python3-smbc
 
 sudo apt remove thunderbird postfix
 
 # Developer packages
-sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager android-tools-adb pwgen meld mesa-utils openvpn
+sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager android-tools-adb pwgen meld mesa-utils openvpn ssmtp
 # Home packages
 #sudo apt install kodi deluge calibre
 
