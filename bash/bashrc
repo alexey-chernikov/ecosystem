@@ -97,7 +97,7 @@ if [ -n "$PS1" ] ; then
 
 
     export PS1='\[\e[1;32m\][\A] \[\e[0;34m\]\u@\[\e[1;35m\]\H \[\e[1;31m\]\w\[\e[0;33m\]$(git branch --no-color 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/[\1]/") \[\e[0;36m\]$(rvm_version)\[\e[0m\]\n\$ '
-    export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin:/home/alex/work/android-sdk-linux/platform-tools"
+    export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin:/home/alex/Android/Sdk/tools"
 
     alias less='less -R'
 
