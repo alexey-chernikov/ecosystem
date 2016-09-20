@@ -18,6 +18,9 @@ sudo apt remove thunderbird postfix
 
 # Developer packages
 sudo apt install mysql-server libmysqlclient-dev build-essential mysql-workbench nodejs npm giggle giggle-personal-details-plugin giggle-terminal-view-plugin postgresql postgresql-contrib libpq-dev pgadmin3 virt-manager android-tools-adb pwgen meld mesa-utils openvpn ssmtp
+
+# System administrator packages
+sudo apt-get install qemu-kvm libvirt-bin
 # Home packages
 #sudo apt install kodi deluge calibre
 

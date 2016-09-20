@@ -1,2 +1,6 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 [[ -r ~/.bashrc ]] && . ~/.bashrc
+
+export PATH=/home/alex/bin/Sencha/Cmd/5.1.2.52:$PATH
+
+export SENCHA_CMD_3_0_0="/home/alex/bin/Sencha/Cmd/5.1.2.52"
