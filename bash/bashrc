@@ -97,7 +97,7 @@ if [ -n "$PS1" ] ; then
 
 
     export PS1='\[\e[1;32m\][\A] \[\e[0;34m\]\u@\[\e[1;35m\]\H \[\e[1;31m\]\w\[\e[0;33m\]$(git branch --no-color 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/[\1]/") \[\e[0;36m\]$(rvm_version)\[\e[0m\]\n\$ '
-    export PATH="$PATH:/var/lib/gems/1.8/bin:/home/alex/.bin:/home/alex/.ecosystem/bin:/home/alex/Android/Sdk/tools"
+    export PATH="$PATH:/var/lib/gems/1.8/bin:~/.bin:~/.ecosystem/bin:~/Android/Sdk/tools"
 
     alias less='less -R'
 
@@ -145,8 +145,8 @@ fi
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-export ANDROID_HOME=/home/alex/Android/Sdk
+export ANDROID_HOME=~/Android/Sdk
 
-export PATH=/home/alex/bin/Sencha/Cmd/5.1.2.52:$PATH
+export PATH=~/bin/Sencha/Cmd/5.1.2.52:$PATH
 
-export SENCHA_CMD_3_0_0="/home/alex/bin/Sencha/Cmd/5.1.2.52"
+export SENCHA_CMD_3_0_0="~/bin/Sencha/Cmd/5.1.2.52"
