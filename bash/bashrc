@@ -136,6 +136,9 @@ if [ -n "$PS1" ] ; then
             echo "\`$1' file does not exist"
         fi
     }
+
+    # h highlighter
+    . ~/.ecosystem/bash/h.sh
 fi
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
