@@ -22,8 +22,8 @@ Host shiva
   User root
   Hostname 192.168.0.2
 Host kiosk
-  ProxyCommand ssh -q agidel.local nc %h %p $*
-  HostName 192.168.1.33
+  HostName kiosk.mup-uis.ru
+  Port 3481
 Host nissan
   User u36298
   HostName u36298.ssh.masterhost.ru

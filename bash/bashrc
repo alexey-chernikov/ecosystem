@@ -73,7 +73,7 @@ if [ -n "$PS1" ] ; then
         eval "`dircolors -b`"
         alias ls='ls --color=auto'
 
-        alias grep='grep --color=auto'
+        alias grep='grep --color=always'
     fi
 
     alias la='ls -la'
