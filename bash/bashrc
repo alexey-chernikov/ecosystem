@@ -150,3 +150,5 @@ export ANDROID_HOME=~/Android/Sdk
 export PATH=~/bin/Sencha/Cmd/5.1.2.52:$PATH
 
 export SENCHA_CMD_3_0_0="~/bin/Sencha/Cmd/5.1.2.52"
+
+export EDITOR='vim'
