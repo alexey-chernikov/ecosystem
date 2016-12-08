@@ -4,6 +4,7 @@
 #sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 #sudo add-apt-repository ppa:wine/wine-builds
 #sudo add-apt-repository ppa:libretro/stable # Retroarch PPA
+#sudo add-apt-repository ppa:graphics-drivers/ppa
 #sudo apt update
 
 #DATA_FOLDER=/media/data
