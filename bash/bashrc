@@ -109,8 +109,6 @@ if [ -n "$PS1" ] ; then
     export LESS_TERMCAP_ue=$'\E[0m'
     export LESS_TERMCAP_us=$'\E[01;32m'
 
-    [ -x .ec2 ] && source ~/.ec2/config
-
     # put this into ~/.bashrc and relogin
     # use extract <path/file_name>
     extract () {
@@ -139,18 +137,19 @@ if [ -n "$PS1" ] ; then
 
     # h highlighter
     . ~/.ecosystem/bash/h.sh
+
+    # Fuzzy finder loader (if installed) - ALT-C CTRL-T CTRL-R keybindings
+    [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 fi
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-export ANDROID_HOME=~/Android/Sdk
 
-export PATH=~/bin/Sencha/Cmd/5.1.2.52:~/Android/Sdk/tools:~/Android/Sdk/platform-tools:$PATH
-
-export SENCHA_CMD_3_0_0="~/bin/Sencha/Cmd/5.1.2.52"
+if [ -d ~/Android ]; then
+    export ANDROID_HOME=~/Android/Sdk
+    export PATH=~/Android/Sdk/tools:~/Android/Sdk/platform-tools:$PATH
+fi
 
 export EDITOR='vim'
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
