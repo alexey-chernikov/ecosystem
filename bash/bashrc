@@ -152,4 +152,8 @@ if [ -d ~/Android ]; then
     export PATH=~/Android/Sdk/tools:~/Android/Sdk/platform-tools:$PATH
 fi
 
+if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte.sh
+fi
+
 export EDITOR='vim'
