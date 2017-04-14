@@ -71,3 +71,6 @@ Host orenburg
 Host beta
   Hostname beta.server.techinform.pro
   Port 2222
+Host erbp.ru
+  ProxyCommand ssh -q techinform.pro nc %h %p $*
+  Hostname erbp.ru
