@@ -2,6 +2,8 @@
 
 path=`pwd`
 
+git clone --depth 5 https://github.com/StevenBlack/hosts.git
+
 ln -f $path/bash/bashrc ~/.bashrc
 ln -f $path/bash/bash_profile ~/.bash_profile
 ln -f $path/bash/bash_aliases ~/.bash_aliases
@@ -26,3 +28,5 @@ ln -sf $path/nvim ~/.config/nvim
 
 mkdir ~/.mplayer 2>/dev/null
 ln -f $path/mplayer/config ~/.mplayer/config
+
+cp hosts/hosts /etc/hosts
