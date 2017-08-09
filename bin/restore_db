@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tar -xOf $2 | gunzip | psql $3 
