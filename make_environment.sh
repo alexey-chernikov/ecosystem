@@ -12,6 +12,7 @@ ln -f $path/bash/inputrc ~/.inputrc
 ln -f $path/ruby/gemrc ~/.gemrc
 ln -f $path/ruby/irbrc ~/.irbrc
 ln -f $path/ruby/rvmrc ~/.rvmrc
+ln -f $path/ruby/railsrc ~/.railsrc
 
 ln -sf $path/bin ~/.bin
 
