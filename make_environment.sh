@@ -21,6 +21,7 @@ ln -f $path/autotest/autotest.rb ~/.autotest
 ln -f $path/vim/vimrc ~/.vimrc
 ln -f $path/ssh/config ~/.ssh/config
 ln -f $path/tmux/tmux.conf ~/.tmux.conf
+ln -f $path/zsh/zshrc ~/.zshrc
 # Neovim configuration
 ln -sf $path/nvim ~/.config/nvim
 #if [ -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
