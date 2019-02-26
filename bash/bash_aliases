@@ -3,7 +3,10 @@ alias project_clean='rake db:drop db:create db:migrate db:seed'
 alias dc='ssh deploy@championnet.ru'
 alias ag='ssh techinform.pro'
 alias ac='ssh championnet.ru'
+alias rp='. rp'
 
 alias br='bundle exec rake'
 
 alias la='ls -la'
+
+alias python2=/usr/bin/python
