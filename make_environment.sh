@@ -22,6 +22,7 @@ ln -f $path/autotest/autotest.rb ~/.autotest
 ln -f $path/vim/vimrc ~/.vimrc
 ln -f $path/ssh/config ~/.ssh/config
 ln -f $path/tmux/tmux.conf ~/.tmux.conf
+ln -f $path/zsh/zshrc ~/.zshrc
 # Neovim configuration
 ln -sf $path/nvim ~/.config/nvim
 #if [ -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
@@ -33,3 +34,7 @@ mkdir ~/.mplayer 2>/dev/null
 ln -f $path/mplayer/config ~/.mplayer/config
 
 cp hosts/hosts /etc/hosts
+
+# zsh steps
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
