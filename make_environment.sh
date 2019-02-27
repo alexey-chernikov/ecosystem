@@ -29,9 +29,10 @@ ln -sf $path/nvim ~/.config/nvim
 
 #Vim
 if [ ! -d ~/.vim ]; then
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/tmp/undo
+    echo "VIM set up..."
+    mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/tmp/undo
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    vim +PlugInstall +qall
 fi
 
 #Mplayer
