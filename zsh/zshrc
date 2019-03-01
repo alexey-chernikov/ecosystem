@@ -100,6 +100,7 @@ alias rnab='yarn run beta-android'
 alias rnib='yarn run beta-ios'
 alias rp='. rp'
 alias mux=tmuxinator
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Powerlevek9k Themes
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir rvm vcs newline root_indicator)
