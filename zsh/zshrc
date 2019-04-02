@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.bin:/usr/local/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/Sdk/platform-tools:$PATH
+export ANDROID_HOME=~/Android/Sdk
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -62,7 +63,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize osx bundler rvm cp docker z vi-mode sudo tmux tmuxinator yarn zsh-syntax-highlighting)
+plugins=(git colored-man-pages colorize osx bundler rvm cp docker z vi-mode sudo tmux tmuxinator yarn zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
