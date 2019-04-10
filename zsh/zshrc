@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.bin:/usr/local/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/Sdk/platform-tools:$PATH
+export PATH=$HOME/.bin:/usr/local/bin:$PATH
 export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$(yarn global bin):$PATH
 
 # Path to your oh-my-zsh installation.
@@ -125,3 +129,6 @@ ZSH_TMUX_AUTOSTART=true
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
