@@ -70,6 +70,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git colored-man-pages colorize osx bundler rvm cp docker z sudo tmux tmuxinator yarn zsh-syntax-highlighting)
 
+DISABLE_AUTO_UPDATE="true"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
