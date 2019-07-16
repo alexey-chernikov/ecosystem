@@ -1,4 +1,4 @@
-sudo apt install vim-gnome git tig ubuntu-restricted-extras shutter nautilus-dropbox gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator
+sudo apt install vim-gnome git tig ubuntu-restricted-extras shutter nautilus-dropbox gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator default-jre
 sudo snap install keepassxc
 snap install --channel=edge --classic rubymine
 snap install --classic android-studio
