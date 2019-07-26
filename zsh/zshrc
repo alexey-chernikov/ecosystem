@@ -1,3 +1,8 @@
+# Ubuntu fix
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte-2.91.sh
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 export ANDROID_HOME=~/Android/Sdk
@@ -71,7 +76,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize osx bundler rvm cp docker z sudo tmux tmuxinator yarn zsh-syntax-highlighting)
+plugins=(git colored-man-pages colorize osx bundler rvm cp docker z sudo tmux tmuxinator yarn zsh-syntax-highlighting command-not-found)
 
 DISABLE_AUTO_UPDATE="true"
 source $ZSH/oh-my-zsh.sh
