@@ -8,9 +8,9 @@ Host b365
   HostName business365-site
 Host dg
   User deploy
-  HostName german.server.techinform-ufa.ru
+  HostName german.server.techinform.dev
 Host g
-  HostName german.server.techinform-ufa.ru
+  HostName german.server.techinform.dev
 Host b
   HostName bashzan.ru
 Host db
@@ -41,7 +41,7 @@ Host xbmc
 Host m2
   User root
 Host php-server
-  ProxyCommand ssh -q german.server.techinform-ufa.ru nc %h %p $*
+  ProxyCommand ssh -q german.server.techinform.dev nc %h %p $*
   HostName php-server
 Host nissan
   User u36298
@@ -53,13 +53,13 @@ Host ms2
 Host myvpn
   Hostname ec2-23-23-158-222.compute-1.amazonaws.com
 Host php-server-beta
-  ProxyCommand ssh -q beta.server.techinform-ufa.ru nc %h %p $*
+  ProxyCommand ssh -q beta.server.techinform.dev nc %h %p $*
   Hostname php-server-beta
 Host ir
   Hostname innovaterussia.ru
   User root
 Host dc
-  Hostname champion.server.techinform-ufa.ru
+  Hostname champion.server.techinform.dev
   User deploy
 Host mega
   Hostname 10.236.24.27
@@ -67,10 +67,15 @@ Host mega
 Host ryjin
   Hostname 192.168.2.18
 Host orenburg
-  Hostname 176.28.64.138
+  Hostname 10.10.10.1
 Host beta
-  Hostname beta.server.techinform.pro
+  Hostname beta.server.techinform.dev
   Port 2222
 Host erbp.ru
-  ProxyCommand ssh -q techinform.pro nc %h %p $*
+  ProxyCommand ssh -q techinform.dev nc %h %p $*
   Hostname erbp.ru
+Host loga
+  User loga-group
+  Hostname loga.server.techinform.dev
+Host t
+  Hostname techinform.dev

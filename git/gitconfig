@@ -22,6 +22,7 @@
 	default = matching
 [core]
 	excludesfile = ~/.gitignore
+	autocrlf = input
 [credential]
   helper = cache --timeout=3600
 [url "git@techinform-ufa.ru:"]
