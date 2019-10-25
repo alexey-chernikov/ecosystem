@@ -1,7 +1,6 @@
 log/*.log
 log/*.pid
 tmp/**/*
-db/schema.rb
 config/database.yml
 config/*.sphinx.conf
 db/*.sqlite3
