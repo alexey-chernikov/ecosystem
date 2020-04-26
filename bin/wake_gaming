@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wakeonlan -i 192.168.70.255 00:d8:61:12:be:ca

@@ -9,6 +9,9 @@ Host b365
 Host dg
   User deploy
   HostName german.server.techinform.dev
+Host dm
+  User deploy
+  HostName mark.moda
 Host g
   HostName german.server.techinform.dev
 Host b
@@ -52,9 +55,6 @@ Host ms2
   HostName ms2
 Host myvpn
   Hostname ec2-23-23-158-222.compute-1.amazonaws.com
-Host php-server-beta
-  ProxyCommand ssh -q beta.server.techinform.dev nc %h %p $*
-  Hostname php-server-beta
 Host ir
   Hostname innovaterussia.ru
   User root
@@ -68,9 +68,6 @@ Host ryjin
   Hostname 192.168.2.18
 Host orenburg
   Hostname 10.10.10.1
-Host beta
-  Hostname beta.server.techinform.dev
-  Port 2222
 Host erbp.ru
   ProxyCommand ssh -q techinform.dev nc %h %p $*
   Hostname erbp.ru
@@ -79,3 +76,4 @@ Host loga
   Hostname loga.server.techinform.dev
 Host t
   Hostname techinform.dev
+
