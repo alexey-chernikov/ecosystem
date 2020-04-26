@@ -1,14 +1,16 @@
-sudo apt install curl vim-gnome git tig ubuntu-restricted-extras shutter nautilus-dropbox gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator default-jre keepassxc zsh iotop ranger rxvt-unicode gnupg2
+sudo apt install curl vim-gtk3 git tig ubuntu-restricted-extras nautilus-dropbox gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator default-jre keepassxc zsh iotop ranger rxvt-unicode gnupg2
 #sudo snap install keepassxc
 #snap install --channel=edge --classic rubymine
 #snap install --classic android-studio
 
 # Developer packages
-sudo apt install mysql-workbench giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev
+sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev
+#mysql-workbench
 
-
-# Nvidia
-# sudo apt install nvidia-settings
+# Docker
+#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+#sudo apt-key fingerprint 0EBFCD88
+#sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # System administrator packages
 # sudo apt-get install qemu-kvm libvirt-bin
