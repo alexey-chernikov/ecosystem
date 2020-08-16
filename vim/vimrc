@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'tpope/vim-rails'
 Plug 'blueshirts/darcula'
 Plug 'itchyny/lightline.vim'
+Plug 'jvirtanen/vim-octave'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'chr4/nginx.vim'
 call plug#end()
