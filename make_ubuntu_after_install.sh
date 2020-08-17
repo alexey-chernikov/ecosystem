@@ -4,7 +4,7 @@ sudo apt install curl vim-gtk3 git tig ubuntu-restricted-extras nautilus-dropbox
 #snap install --classic android-studio
 
 # Developer packages
-sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev
+sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick
 #mysql-workbench
 
 # Docker
