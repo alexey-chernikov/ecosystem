@@ -1,3 +1,4 @@
 #!/bin/bash
 
 rsync -avz --progress "$@" /media/storage/Фото media.lan:/media/backups/home/
+#rsync -avz --progress --delete --dry-run "$@" /media/storage/Фото media.lan:/media/backups/home/
