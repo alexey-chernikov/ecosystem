@@ -76,4 +76,7 @@ Host loga
   Hostname loga.server.techinform.dev
 Host t
   Hostname techinform.dev
-
+Host pcprto.ru
+  User root
+  Port 44222
+  IdentityFile ~/.ssh/pcprto
