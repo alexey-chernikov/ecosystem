@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -f "$1" ]; then
+    echo "Deploying..."
+    cp "$1" ~/temp/jabb.zip
+    cd ~/temp
+    unzip jabb.zip -d jabb
+    cd jabb
+    cp page*.html index.html
+    rsync -avz --delete . dg:/var/www/sites/jabb
+    cd ..
+    rm -fr jabb
+    rm jabb.zip
+fi
+
