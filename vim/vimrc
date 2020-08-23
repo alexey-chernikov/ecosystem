@@ -229,3 +229,4 @@ function! VisualSelection(direction, extra_filter) range
 endfunction
 
 map <C-t> :NERDTreeToggle<CR>
+map <C-_> <plug>NERDCommenterToggle<CR>
