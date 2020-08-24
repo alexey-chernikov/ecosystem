@@ -230,3 +230,4 @@ endfunction
 
 map <C-t> :NERDTreeToggle<CR>
 map <C-_> <plug>NERDCommenterToggle<CR>
+map <M-_> <plug>NERDCommenterToggle<CR>
