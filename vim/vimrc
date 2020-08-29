@@ -2,12 +2,14 @@ call plug#begin()
 " Themes
 Plug 'blueshirts/darcula'
 
+" Vim upgrades
 Plug 'itchyny/lightline.vim'
 
 " Filemanager
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle'}
 
+" Programming utils
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
