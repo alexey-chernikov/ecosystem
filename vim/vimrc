@@ -13,7 +13,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle'}
 Plug 'preservim/nerdcommenter' "comments
 Plug 'tpope/vim-fugitive' "git management
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rails'
+Plug 'ctrlpvim/ctrlp.vim'
+
+"Ruby
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 " Syntax highlighting
 Plug 'jvirtanen/vim-octave'
