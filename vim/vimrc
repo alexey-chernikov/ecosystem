@@ -2,11 +2,13 @@ call plug#begin()
 Plug 'tpope/vim-rails'
 Plug 'blueshirts/darcula'
 Plug 'itchyny/lightline.vim'
-Plug 'jvirtanen/vim-octave'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle'}
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
+
+" Syntax highlighting
+Plug 'jvirtanen/vim-octave'
 Plug 'chr4/nginx.vim'
 call plug#end()
 
