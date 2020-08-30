@@ -9,10 +9,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle'}
 
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
 " Programming utils
 Plug 'preservim/nerdcommenter' "comments
-Plug 'tpope/vim-fugitive' "git management
-Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 
 "Ruby
