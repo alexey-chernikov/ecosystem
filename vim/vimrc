@@ -261,3 +261,8 @@ endfunction
 map <C-t> :NERDTreeToggle<CR>
 map <C-_> <plug>NERDCommenterToggle<CR>
 map <M-_> <plug>NERDCommenterToggle<CR>
+
+map <silent> <C-h> :call WinMove('h')<CR>
+map <silent> <C-j> :call WinMove('j')<CR>
+map <silent> <C-k> :call WinMove('k')<CR>
+map <silent> <C-l> :call WinMove('l')<CR>
