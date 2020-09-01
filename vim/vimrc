@@ -45,6 +45,8 @@ nmap <leader>q :q<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Update time for gut marks of vimgutter plugin (also affects swap)
+set updatetime=100
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
