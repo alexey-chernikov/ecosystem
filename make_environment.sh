@@ -14,6 +14,8 @@ ln -sf $path/ruby/gemrc ~/.gemrc
 ln -sf $path/ruby/irbrc ~/.irbrc
 ln -sf $path/ruby/rvmrc ~/.rvmrc
 ln -sf $path/ruby/railsrc ~/.railsrc
+mkdir -p ~/.bundle
+ln -sf $path/ruby/bundle_config ~/.bundle/config
 
 ln -sf $path/bin ~/.bin
 
