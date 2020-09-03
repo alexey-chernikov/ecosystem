@@ -20,8 +20,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
-" Syntax highlighting
+" Octave
 Plug 'jvirtanen/vim-octave'
+
+" Nginx
 Plug 'chr4/nginx.vim'
 call plug#end()
 
