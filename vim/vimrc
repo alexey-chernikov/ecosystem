@@ -17,7 +17,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdcommenter' "comments
 Plug 'ctrlpvim/ctrlp.vim'
 
-"Ruby
+" Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 " Syntax highlighting
