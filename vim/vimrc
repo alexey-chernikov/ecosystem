@@ -20,6 +20,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Syntax checker
 Plug 'vim-syntastic/syntastic'
 
+" Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
