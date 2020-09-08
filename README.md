@@ -1,3 +1,3 @@
 # Alexey Chernikov linux environment
 
-Common files
+TODO: install instructions
