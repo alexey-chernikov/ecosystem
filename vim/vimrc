@@ -10,8 +10,8 @@ Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle'}
 
 " Git
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive' " git commands
+Plug 'airblade/vim-gitgutter' "git marks
 
 " Programming utils
 Plug 'preservim/nerdcommenter' "comments
