@@ -27,7 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 " Octave
-Plug 'jvirtanen/vim-octave'
+Plug 'jvirtanen/vim-octave', { 'for': 'octave' }
 
 " Nginx
 Plug 'chr4/nginx.vim'
