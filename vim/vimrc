@@ -15,7 +15,7 @@ Plug 'airblade/vim-gitgutter' "git marks
 
 " Programming utils
 Plug 'preservim/nerdcommenter' "comments
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim' " fuzzy search
 
 " Syntax checker
 Plug 'vim-syntastic/syntastic'
