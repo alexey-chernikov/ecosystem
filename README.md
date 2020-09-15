@@ -2,4 +2,4 @@
 
 TODO: install instructions
 
-clone, run ./make_environment.sh 
+clone, run ./make_environment.sh for automatic config linking 
