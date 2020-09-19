@@ -27,7 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 " Go
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 
 " Octave
 Plug 'jvirtanen/vim-octave', { 'for': 'octave' }
