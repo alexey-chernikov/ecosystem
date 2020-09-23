@@ -27,7 +27,8 @@ ln -sf $path/ssh/config ~/.ssh/config
 ln -sf $path/tmux/tmux.conf ~/.tmux.conf
 ln -sf $path/zsh/zshrc ~/.zshrc
 # Neovim configuration
-ln -sf $path/nvim ~/.config/nvim
+mkdir -p ~/.config/nvim
+ln -sf $path/nvim/init.vim ~/.config/nvim/init.vim
 
 #Vim
 if [ ! -d ~/.vim ]; then
