@@ -17,7 +17,9 @@ ln -sf $path/ruby/railsrc ~/.railsrc
 mkdir -p ~/.bundle
 ln -sf $path/ruby/bundle_config ~/.bundle/config
 
-ln -sf $path/bin ~/.bin
+if [[ -e ~/.bin && ! -L ~/.bin ]]; then
+    ln -sf $path/bin ~/.bin
+fi
 
 ln -sf $path/git/gitconfig ~/.gitconfig
 ln -sf $path/git/gitignore ~/.gitignore
@@ -29,6 +31,10 @@ ln -sf $path/zsh/zshrc ~/.zshrc
 # Neovim configuration
 mkdir -p ~/.config/nvim
 ln -sf $path/nvim/init.vim ~/.config/nvim/init.vim
+
+# Fonts installation
+mkdir -p ~/.local/share/fonts
+cp $path/fonts/* ~/.local/share/fonts/
 
 #Vim
 if [ ! -d ~/.vim ]; then
