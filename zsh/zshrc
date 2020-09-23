@@ -12,7 +12,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/cprocsp/bin/amd64
 export PATH=$PATH:/opt/cprocsp/sbin/amd64
-export PATH=$(yarn global bin):$PATH
+type yarn &> /dev/null && export PATH=$(yarn global bin):$PATH # Check if yarn preset
 
 export PGHOST=127.0.0.1
 export PGUSER=postgres
