@@ -1,11 +1,5 @@
 HashKnownHosts no
 
-Host php-fpm-old
-  ProxyCommand ssh -q main.rb7.ru nc %h %p $*
-  HostName php-fpm
-Host b365
-  ProxyCommand ssh -q rb7.ru nc %h %p $*
-  HostName business365-site
 Host dg
   User deploy
   HostName german.server.techinform.dev
