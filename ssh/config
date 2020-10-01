@@ -8,11 +8,6 @@ Host dm
   HostName mark.moda
 Host g
   HostName german.server.techinform.dev
-Host b
-  HostName bashzan.ru
-Host db
-  User deploy
-  HostName bashzan.ru
 Host bahamut
   User root
 Host shiva
