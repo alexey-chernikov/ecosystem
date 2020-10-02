@@ -8,11 +8,6 @@ Host dm
   HostName mark.moda
 Host g
   HostName german.server.techinform.dev
-Host bahamut
-  User root
-Host shiva
-  User root
-  Hostname 192.168.0.2
 Host kiosk
   HostName kiosk.mup-uis.ru
   Port 3481
