@@ -64,3 +64,5 @@ Host pcprto.ru
   User root
   Port 44222
   IdentityFile ~/.ssh/pcprto
+Host router
+  User root
