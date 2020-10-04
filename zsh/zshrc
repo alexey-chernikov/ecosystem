@@ -114,7 +114,6 @@ export EDITOR='vim'
 alias vzsh="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rp=". rp"
-alias rp='. rp'
 alias mux=tmuxinator
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias kubectl='microk8s.kubectl'
