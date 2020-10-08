@@ -17,11 +17,6 @@ Host nissan
 Host honda
   User u281226
   HostName u281226.ssh.masterhost.ru
-Host xbian
-  User pi
-Host xbmc
-  HostName 192.168.0.147
-  User pi
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
@@ -37,8 +32,6 @@ Host ms2
   User user
   Port 2222
   HostName ms2
-Host myvpn
-  Hostname ec2-23-23-158-222.compute-1.amazonaws.com
 Host ir
   Hostname innovaterussia.ru
   User root
