@@ -28,13 +28,6 @@ Host php-server
 Host nissan
   User u36298
   Hostname u36298.ftp.masterhost.ru
-Host ms2
-  User user
-  Port 2222
-  HostName ms2
-Host ir
-  Hostname innovaterussia.ru
-  User root
 Host dc
   Hostname champion.server.techinform.dev
   User deploy
