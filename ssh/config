@@ -34,8 +34,6 @@ Host dc
 Host mega
   Hostname 10.236.24.27
   User techinform
-Host ryjin
-  Hostname 192.168.2.18
 Host orenburg
   Hostname 10.10.10.1
 Host erbp.ru
