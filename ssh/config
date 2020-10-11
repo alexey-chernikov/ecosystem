@@ -11,9 +11,6 @@ Host g
 Host kiosk
   HostName kiosk.mup-uis.ru
   Port 3481
-Host nissan
-  User u36298
-  HostName u36298.ssh.masterhost.ru
 Host honda
   User u281226
   HostName u281226.ssh.masterhost.ru
