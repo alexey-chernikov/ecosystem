@@ -22,9 +22,6 @@ Host m2
 Host php-server
   ProxyCommand ssh -q german.server.techinform.dev nc %h %p $*
   HostName php-server
-Host nissan
-  User u36298
-  Hostname u36298.ftp.masterhost.ru
 Host dc
   Hostname champion.server.techinform.dev
   User deploy
