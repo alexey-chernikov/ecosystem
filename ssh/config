@@ -28,8 +28,6 @@ Host dc
 Host mega
   Hostname 10.236.24.27
   User techinform
-Host orenburg
-  Hostname 10.10.10.1
 Host erbp.ru
   ProxyCommand ssh -q techinform.dev nc %h %p $*
   Hostname erbp.ru
