@@ -121,6 +121,7 @@ alias brake='bundle exec rake'
 alias brc='bundle exec rails console'
 alias matrix="cmatrix -bs"
 alias ecoupdate="cd ~/.ecosystem && git pull && ./make_environment.sh"
+alias csd='cap staging deploy'
 
 # Powerlevek9k Themes
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir rvm vcs newline root_indicator)
