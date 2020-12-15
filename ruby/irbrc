@@ -46,12 +46,12 @@ end
 
 if Rails
   print "Rails environment detected: #{Rails.env}...\n"
-  begin
-    require 'hirb'
-    Hirb.enable
-  rescue
-    print "Please install hirb gem\n"
-  end
+  #begin
+    #require 'hirb'
+    #Hirb.enable
+  #rescue
+    #print "Please install hirb gem\n"
+  #end
 
   rails_root = File.basename(Dir.pwd)
 
