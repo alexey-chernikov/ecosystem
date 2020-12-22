@@ -42,3 +42,7 @@ Host pcprto.ru
   IdentityFile ~/.ssh/pcprto
 Host router
   User root
+Host dsp
+  User deploy
+  IdentityFile ~/.ssh/akvelon
+  Hostname jenkins-2.adjust.com
