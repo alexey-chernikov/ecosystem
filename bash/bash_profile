@@ -1,10 +1,7 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 [[ -r ~/.bashrc ]] && . ~/.bashrc
 
-export PATH=~/bin/Sencha/Cmd/5.1.2.52:$PATH
-
-export SENCHA_CMD_3_0_0="~/bin/Sencha/Cmd/5.1.2.52"
-
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
