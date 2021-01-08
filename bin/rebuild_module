@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#rm -fr ~/project/linux
-# mkdir -p ~/project/linux/build
+rm -fr ~/projects/linux
+ mkdir -p ~/projects/linux/build
 
 cd ~/projects/linux
 
@@ -9,9 +9,9 @@ cp /lib/modules/`uname -r`/build/.config ./build/
 cp /lib/modules/`uname -r`/build/Module.symvers ./build/
 cp /lib/modules/`uname -r`/build/Makefile ./build/
 
-#apt source linux-image-unsigned-$(uname -r)
+apt source linux-image-unsigned-$(uname -r)
 cd ./linux-hwe-5.8-5.8.0
-patch -p1 < ../uvc.patch
+patch -p1 < ~/.ecosystem/patches/uvc.patch
 make mrproper
 
 export MAKEFLAGS='-j6'
@@ -19,7 +19,9 @@ export MAKEFLAGS='-j6'
 make O=../build outputmakefile
 make O=../build archprepare
 make O=../build prepare
-#make O=../build modules SUBDIRS=scripts
-make O=../build modules SUBDIRS=drivers/media/usb/uvc/
 
-#sudo cp ./build/drivers/media/usb/uvc/uvcvideo.ko /lib/modules/`uname -r`/kernel/drivers/media/usb/uvc/
+echo "Insert correct kernel number in Makefile"
+#make O=../build modules SUBDIRS=scripts
+#make O=../build modules SUBDIRS=drivers/media/usb/uvc/
+
+#sudo cp ../build/drivers/media/usb/uvc/uvcvideo.ko /lib/modules/`uname -r`/kernel/drivers/media/usb/uvc/
