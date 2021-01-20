@@ -46,6 +46,10 @@ Host dsp
   User deploy
   IdentityFile ~/.ssh/akvelon
   Hostname jenkins-2.adjust.com
+Host dpp
+  User deploy
+  IdentityFile ~/.ssh/akvelon
+  Hostname mate.adjust.com
 Host bash
   User tisoft
   Hostname bash.vpn
