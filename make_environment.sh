@@ -17,7 +17,7 @@ ln -sf $path/ruby/railsrc ~/.railsrc
 mkdir -p ~/.bundle
 ln -sf $path/ruby/bundle_config ~/.bundle/config
 
-if [[ -e ~/.bin && ! -L ~/.bin ]]; then
+if [[ ! -e ~/.bin ]]; then
     ln -sf $path/bin ~/.bin
 fi
 
