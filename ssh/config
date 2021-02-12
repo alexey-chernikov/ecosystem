@@ -17,8 +17,6 @@ Host honda
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
-Host m2
-  User root
 Host php-server
   ProxyCommand ssh -q german.server.techinform.dev nc %h %p $*
   HostName php-server
