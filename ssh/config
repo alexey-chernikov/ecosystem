@@ -8,9 +8,6 @@ Host dm
   HostName mark.moda
 Host g
   HostName german.server.techinform.dev
-Host kiosk
-  HostName kiosk.mup-uis.ru
-  Port 3481
 Host honda
   User u281226
   HostName u281226.ssh.masterhost.ru
