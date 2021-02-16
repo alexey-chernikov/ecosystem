@@ -127,7 +127,7 @@ alias csd='cap staging deploy'
 alias cpd='cap production deploy'
 
 # Powerlevek9k Themes
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir rvm vcs newline root_indicator)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir rbenv vcs newline root_indicator)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status command_execution_time background_jobs history time)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_RVM_BACKGROUND="red"
