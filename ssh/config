@@ -48,3 +48,6 @@ Host dpp
 Host bash
   User tisoft
   Hostname bash.vpn
+Host qa1
+  User dashboard
+  Hostname qa-1.adjust.com
