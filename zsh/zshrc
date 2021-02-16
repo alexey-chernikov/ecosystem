@@ -145,8 +145,8 @@ ZSH_HIGHLIGHT_PATTERNS+=('sudo rm -[fr]*' 'fg=white,bold,bg=red')
 
 ZSH_TMUX_AUTOSTART=true
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Initialize asdf
 . $HOME/.asdf/asdf.sh
