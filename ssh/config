@@ -8,17 +8,12 @@ Host dm
   HostName mark.moda
 Host g
   HostName german.server.techinform.dev
-Host kiosk
-  HostName kiosk.mup-uis.ru
-  Port 3481
 Host honda
   User u281226
   HostName u281226.ssh.masterhost.ru
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
-Host m2
-  User root
 Host php-server
   ProxyCommand ssh -q german.server.techinform.dev nc %h %p $*
   HostName php-server
