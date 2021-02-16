@@ -68,3 +68,8 @@ if [ ! -d ~/.asdf ]; then
     cd ~/.asdf
     git checkout "$(git describe --abbrev=0 --tags)"
 fi
+
+# Rbenv installation
+if [ ! -d ~/.rbenv ]; then
+    curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
+fi
