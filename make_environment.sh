@@ -28,6 +28,7 @@ ln -sf $path/vim/vimrc ~/.vimrc
 ln -sf $path/ssh/config ~/.ssh/config
 ln -sf $path/tmux/tmux.conf ~/.tmux.conf
 ln -sf $path/zsh/zshrc ~/.zshrc
+ln -sf $path/zsh/p10k.zsh ~/.p10k.zsh
 # Neovim configuration
 mkdir -p ~/.config/nvim
 ln -sf $path/nvim/init.vim ~/.config/nvim/init.vim
