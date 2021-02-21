@@ -149,6 +149,9 @@ ZSH_TMUX_AUTOSTART=true
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # Initialize asdf
 . $HOME/.asdf/asdf.sh
 
@@ -156,3 +159,6 @@ ZSH_TMUX_AUTOSTART=true
 #export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
