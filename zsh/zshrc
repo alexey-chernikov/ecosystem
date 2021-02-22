@@ -128,20 +128,6 @@ alias ecoupdate="cd ~/.ecosystem && git pull && ./make_environment.sh"
 alias csd='cap staging deploy'
 alias cpd='cap production deploy'
 
-# Powerlevek9k Themes
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir rbenv vcs newline root_indicator)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status command_execution_time background_jobs history time)
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_RVM_BACKGROUND="red"
-POWERLEVEL9K_RBENV_BACKGROUND="red"
-POWERLEVEL9K_NODE_VERSION_BACKGROUND="yellow"
-POWERLEVEL9K_NODE_VERSION_FOREGROUND="black"
-
-POWERLEVEL9K_VI_INSERT_MODE_STRING=''
-POWERLEVEL9K_VI_COMMAND_MODE_STRING='NORMAL'
-
-POWERLEVEL9K_MODE='nerdfont-complete'
-
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -[fr]*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('sudo rm -[fr]*' 'fg=white,bold,bg=red')
