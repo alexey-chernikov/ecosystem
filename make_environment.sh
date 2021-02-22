@@ -54,6 +54,8 @@ ln -f $path/mplayer/config ~/.mplayer/config
 if [ ! -d ~/.oh-my-zsh ]; then
     echo "Oh-my-zsh set up..."
     git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+else
+    omz update # update oh my zsh by embedded update mechanism
 fi
 
 [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ] &&   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
