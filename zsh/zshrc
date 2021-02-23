@@ -137,6 +137,4 @@ ZSH_TMUX_AUTOSTART=true
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Initialize asdf
-. $HOME/.asdf/asdf.sh
-
+typeset -aU path # Make sure path contains only uniq paths
