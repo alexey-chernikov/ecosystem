@@ -139,3 +139,5 @@ ZSH_TMUX_AUTOSTART=true
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -aU path # Make sure path contains only uniq paths
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
