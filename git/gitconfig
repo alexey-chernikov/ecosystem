@@ -30,3 +30,5 @@
   pushInsteadOf = tech:
 [filter "zshpassword"]
 	clean = sed \"s/PGPASSWORD=.*/PGPASSWORD=postgres/\"
+[commit]
+	gpgSign = true
