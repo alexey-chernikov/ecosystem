@@ -1,6 +1,7 @@
 [user]
 	name = Alexey Chernikov
 	email = alexey@chernikov.online
+	signingkey = 49F23077343EBF97
 [color]
 	ui = auto
 [alias]
