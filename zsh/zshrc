@@ -14,6 +14,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/cprocsp/bin/amd64
 export PATH=$PATH:/opt/cprocsp/sbin/amd64
+export GPG_TTY=$(tty)
 
 export MAKEFLAGS='-j6'
 
