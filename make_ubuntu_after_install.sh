@@ -1,6 +1,6 @@
 sudo apt install curl vim-gtk3 git tig ubuntu-restricted-extras nautilus-dropbox gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator default-jre keepassxc zsh iotop ranger rxvt-unicode gnupg2
 #sudo snap install keepassxc
-#snap install --channel=edge --classic rubymine
+snap install --channel=stable --classic rubymine
 #snap install --classic android-studio
 
 # Developer packages
