@@ -7,6 +7,9 @@ snap install --channel=stable --classic rubymine
 sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick nodejs npm
 #mysql-workbench
 
+# Ruby dependencies
+sudo apt install libreadline-dev 
+
 # Docker
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 #sudo apt-key fingerprint 0EBFCD88
