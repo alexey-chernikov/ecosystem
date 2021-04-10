@@ -1,17 +1,22 @@
 sudo apt install curl vim-full git tig ubuntu-restricted-extras htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
 sudo apt install gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode
 #sudo snap install keepassxc
-#snap install --channel=edge --classic rubymine
+snap install --channel=stable --classic rubymine
 #snap install --classic android-studio
 
 # Developer packages
-sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick
+sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick nodejs npm
 #mysql-workbench
 
+# Ruby dependencies
+sudo apt install libreadline-dev 
+
 # Docker
-#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-#sudo apt-key fingerprint 0EBFCD88
-#sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # System administrator packages
 # sudo apt-get install qemu-kvm libvirt-bin
