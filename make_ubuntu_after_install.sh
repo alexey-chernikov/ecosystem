@@ -4,7 +4,7 @@ snap install --channel=stable --classic rubymine
 #snap install --classic android-studio
 
 # Developer packages
-sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick nodejs npm libpq-dev
+sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick nodejs npm libpq-dev libncurses5-dev
 #mysql-workbench
 
 # Ruby dependencies
