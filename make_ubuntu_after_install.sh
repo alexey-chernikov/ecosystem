@@ -1,4 +1,5 @@
-sudo apt install curl vim-gtk3 git tig ubuntu-restricted-extras gnome-tweak-tool htop nmap mc doublecmd-gtk ncdu p7zip ssh nfs-common tmux mpv pv pavucontrol cifs-utils whois filezilla tmuxinator default-jre keepassxc zsh iotop ranger rxvt-unicode gnupg2
+sudo apt install curl vim git tig htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
+sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode
 #sudo snap install keepassxc
 snap install --channel=stable --classic rubymine
 #snap install --classic android-studio
