@@ -2,7 +2,7 @@
 
 TODO: install instructions
 
-clone, run ./make_environment.sh for automatic config linking 
+clone, run ./make_environment.sh for automatic config linking and auto tools install
 
 For new ubuntu 21.04 install:
 
