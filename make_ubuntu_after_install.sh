@@ -9,7 +9,7 @@ sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient
 #mysql-workbench
 
 # Ruby dependencies
-sudo apt install libreadline-dev 
+sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 
 # Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
