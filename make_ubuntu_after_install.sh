@@ -12,11 +12,11 @@ sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient
 sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 
 # Docker
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+#sudo apt-key fingerprint 0EBFCD88
+#sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+#sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # System administrator packages
 # sudo apt-get install qemu-kvm libvirt-bin
