@@ -60,3 +60,15 @@ Host prod
 Host staging
   User dashboard
   Hostname staging.adjust.com
+Host isup_prod_apps1
+  User chernikov
+  Hostname isup_prod_apps1
+Host isup_prod_apps2
+  User chernikov
+  Hostname isup_prod_apps2
+Host isup_prod_db1
+  User chernikov
+  Hostname isup_prod_db1
+Host isup_prod_db2
+  User chernikov
+  Hostname isup_prod_db2
