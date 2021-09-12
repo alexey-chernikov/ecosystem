@@ -62,10 +62,10 @@ Host staging
   Hostname staging.adjust.com
 Host isup_prod_apps1
   User chernikov
-  Hostname isup_prod_apps1
+  Hostname 10.12.129.3 
 Host isup_prod_apps2
   User chernikov
-  Hostname isup_prod_apps2
+  Hostname 10.12.129.4
 Host isup_prod_db1
   User chernikov
   Hostname isup_prod_db1
