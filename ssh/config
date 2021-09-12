@@ -68,7 +68,7 @@ Host isup_prod_apps2
   Hostname 10.12.129.4
 Host isup_prod_db1
   User chernikov
-  Hostname isup_prod_db1
+  Hostname 10.12.129.5
 Host isup_prod_db2
   User chernikov
   Hostname isup_prod_db2
