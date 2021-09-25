@@ -25,10 +25,6 @@ sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 # Home packages
 #sudo apt install kodi deluge calibre
 
-# RVM install
-#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-#curl -sSL https://get.rvm.io | bash -s stable
-
 #Oracle Java 8
 #sudo apt install oracle-java8-installer
 
