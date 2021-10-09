@@ -1,6 +1,6 @@
 # Alexey Chernikov linux environment
 
-TODO: install instructions
+# Install
 
 clone, run ./make_environment.sh for automatic config linking and auto tools install
 

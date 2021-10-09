@@ -1,3 +1,5 @@
+# Ubuntu 21.04 steps
+
 sudo apt install curl vim git tig htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
 sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode
 #sudo snap install keepassxc
@@ -22,10 +24,6 @@ sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 # sudo apt-get install qemu-kvm libvirt-bin
 # Home packages
 #sudo apt install kodi deluge calibre
-
-# RVM install
-#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-#curl -sSL https://get.rvm.io | bash -s stable
 
 #Oracle Java 8
 #sudo apt install oracle-java8-installer
