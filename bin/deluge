@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh media.lan docker $1 deluge
