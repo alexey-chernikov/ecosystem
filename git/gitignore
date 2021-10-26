@@ -16,4 +16,5 @@ cache
 nbproject
 public/sitemap*
 .rvmrc
+.idea
 .byebug_history
