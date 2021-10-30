@@ -26,8 +26,6 @@
 	autocrlf = input
 [credential]
   helper = cache --timeout=3600
-[url "git@techinform-ufa.ru:"]
-  pushInsteadOf = tech:
 [filter "zshpassword"]
 	clean = sed \"s/PGPASSWORD=.*/PGPASSWORD=postgres/\"
 [commit]
