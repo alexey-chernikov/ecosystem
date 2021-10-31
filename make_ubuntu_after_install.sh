@@ -25,9 +25,6 @@ sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 # Home packages
 #sudo apt install kodi deluge calibre
 
-#Oracle Java 8
-#sudo apt install oracle-java8-installer
-
 #git clone git://github.com/alexey-chernikov/ecosystem .ecosystem
 #cd .ecosystem
 #./make_environment.sh
