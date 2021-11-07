@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo modprobe rndis_host
+sudo ifconfig enx00093bf01a40 up
+sudo dhclient enx00093bf01a40
