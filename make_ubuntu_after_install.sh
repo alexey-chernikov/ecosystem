@@ -3,8 +3,6 @@
 sudo apt install curl vim git tig htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
 sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode
 #sudo snap install keepassxc
-snap install --channel=stable --classic rubymine
-#snap install --classic android-studio
 
 # Developer packages
 sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient-dev imagemagick nodejs npm libpq-dev libncurses5-dev
