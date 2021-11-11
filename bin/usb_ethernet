@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo ifconfig enxc4a81d6dab6e up
+sudo dhclient enxc4a81d6dab6e
+
