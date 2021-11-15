@@ -11,6 +11,11 @@ sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient
 # Ruby dependencies
 sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 
+for snappackage in $(cat snaps)
+do
+    sudo snap install $snappackage
+done
+
 # Docker
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 #sudo apt-key fingerprint 0EBFCD88
