@@ -78,3 +78,6 @@ Host isup_test_apps1
 Host isup_test_apps2
   User chernikov
   Hostname 10.12.129.99
+Host ha
+  User root
+  Hostname homeassistant.local
