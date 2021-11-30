@@ -85,7 +85,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize osx bundler cp docker z sudo tmux tmuxinator yarn zsh-syntax-highlighting command-not-found tmuxinator kubectl zsh-nvm asdf rbenv rails fzf history pyenv)
+plugins=(git colored-man-pages colorize osx bundler cp docker z sudo tmux tmuxinator yarn zsh-syntax-highlighting command-not-found tmuxinator kubectl zsh-nvm asdf rbenv rails fzf history pyenv brew)
 
 DISABLE_AUTO_UPDATE="true"
 source $ZSH/oh-my-zsh.sh
