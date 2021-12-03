@@ -25,6 +25,8 @@ make O=../build prepare
 
 echo "Insert correct kernel number in Makefile"
 vim Makefile
+sed -ri '/CONFIG_SYSTEM_TRUSTED_KEYS/s/=.+/=""/g' ../build/.config
+# scripts/config --disable SYSTEM_REVOCATION_KEYS
 #make O=../build modules SUBDIRS=scripts
 make O=../build modules SUBDIRS=drivers/media/usb/uvc/
 
