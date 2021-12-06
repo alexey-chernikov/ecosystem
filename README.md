@@ -6,4 +6,4 @@ clone, run ./make_environment.sh for automatic config linking and auto tools ins
 
 For new ubuntu 21.04 install:
 
- run ./make_ubuntu_after_install.sh script to install required apt/snap packages
+ run `./make_ubuntu_after_install.sh` script to install required apt/snap packages
