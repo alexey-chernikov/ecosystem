@@ -11,10 +11,12 @@ sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient
 # Ruby dependencies
 sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
 
+IFS=$'\n'       # make newlines the only separator
 for snappackage in $(cat snaps)
 do
     sudo snap install $snappackage
 done
+unset IFS
 
 # Docker
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -

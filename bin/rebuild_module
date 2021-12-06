@@ -10,7 +10,7 @@ cp /lib/modules/`uname -r`/build/Module.symvers ./build/
 cp /lib/modules/`uname -r`/build/Makefile ./build/
 
 apt source linux-image-unsigned-$(uname -r)
-cd ./linux-hwe-5.8-5.8.0
+cd ./linux-hwe-5.11-5.11.0
 patch -p1 < ~/.ecosystem/patches/uvc.patch
 make mrproper
 
@@ -25,6 +25,8 @@ make O=../build prepare
 
 echo "Insert correct kernel number in Makefile"
 vim Makefile
+sed -ri '/CONFIG_SYSTEM_TRUSTED_KEYS/s/=.+/=""/g' ../build/.config
+# scripts/config --disable SYSTEM_REVOCATION_KEYS
 #make O=../build modules SUBDIRS=scripts
 make O=../build modules SUBDIRS=drivers/media/usb/uvc/
 
