@@ -4,5 +4,4 @@ rubymine --classic
 postman
 skype
 discord
-go --classic
-microk8s --classic
+--classic go
