@@ -8,4 +8,4 @@ For new ubuntu 21.04 install:
 
  run `./make_ubuntu_after_install.sh` script to install required apt/snap packages
 
- Another ubuntu versions probably should work alo
+ Another ubuntu versions probably should work also
