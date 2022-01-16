@@ -89,6 +89,8 @@ else
 fi
 
 # Disable suspend/hibernate buttons
-gsettings set org.gnome.settings-daemon.plugins.power button-hibernate "nothing"
-gsettings set org.gnome.settings-daemon.plugins.power button-suspend "nothing"
+if [ command -v  gsettings &> /dev/null ]; then
+    gsettings set org.gnome.settings-daemon.plugins.power button-hibernate "nothing"
+    gsettings set org.gnome.settings-daemon.plugins.power button-suspend "nothing"
+fi
 
