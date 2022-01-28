@@ -121,7 +121,6 @@ alias vzsh="vim ~/.zshrc"
 alias rp=". rp"
 alias mux=tmuxinator
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias kubectl='microk8s.kubectl'
 alias brake='bundle exec rake'
 alias brc='bundle exec rails console'
 alias matrix="cmatrix -bs"
