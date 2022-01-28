@@ -87,3 +87,11 @@ else
     git pull
     ~/.fzf/install --all
 fi
+
+# Disable suspend/hibernate buttons
+if [ command -v  gsettings &> /dev/null ]; then
+    gsettings set org.gnome.settings-daemon.plugins.power button-hibernate "nothing"
+    gsettings set org.gnome.settings-daemon.plugins.power button-suspend "nothing"
+    gsettings set org.gnome.settings-daemon.plugins.power button-sleep "nothing"
+fi
+
