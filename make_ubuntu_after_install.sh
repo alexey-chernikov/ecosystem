@@ -1,7 +1,7 @@
 # Ubuntu 21.04 steps
 
 sudo apt install curl vim git tig htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
-sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode minitube
+sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode minitube solaar-gnome3
 #sudo snap install keepassxc
 
 # Developer packages
