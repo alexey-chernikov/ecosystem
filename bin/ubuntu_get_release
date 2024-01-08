@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -avzL --progress --delete rsync://mirror.yandex.ru/ubuntu-releases/$1 /mnt/nas/os/ubuntu/
+rsync -avzLP --inplace --delete rsync://mirror.yandex.ru/ubuntu-releases/$1 ~/Documents/

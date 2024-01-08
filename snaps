@@ -5,3 +5,5 @@ postman
 skype
 discord
 go --classic
+code --classic
+nvim --classic

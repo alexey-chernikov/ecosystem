@@ -1,7 +1,7 @@
 # Ubuntu 21.04 steps
 
 sudo apt install curl vim git tig htop nmap mc ncdu p7zip ssh nfs-common tmux pv cifs-utils whois tmuxinator default-jre zsh iotop ranger gnupg2
-sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode minitube
+sudo apt install ubuntu-restricted-extras gnome-tweak-tool doublecmd-gtk mpv pavucontrol filezilla keepassxc rxvt-unicode minitube solaar
 #sudo snap install keepassxc
 
 # Developer packages
@@ -9,7 +9,7 @@ sudo apt install giggle pwgen meld mysql-client postgresql-client libmysqlclient
 #mysql-workbench
 
 # Ruby dependencies
-sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxlst-dev
+sudo apt install libreadline-dev libsqlite3-dev libmagickwand-dev libxslt1-dev
 
 IFS=$'\n'       # make newlines the only separator
 for snappackage in $(cat snaps)
