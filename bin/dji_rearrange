@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#cine
+mkdir -p 10bit_original
+for file in *.MP4
+do
+  if [ $(mediainfo $file | grep '10 bit' | wc -l) -ne 0 ]
+  then
+    echo "$file is 10 bit. Moving to 10bit_original..."
+    mv $file 10bit_original/
+  fi
+done
+mkdir -p raw
+mv *.DNG raw/
+mkdir -p srt/
+mv *.SRT srt/
