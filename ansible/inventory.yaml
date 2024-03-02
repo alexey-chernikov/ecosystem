@@ -1,4 +1,8 @@
-localhost:
+local:
   hosts:
-    local:
-      ansible_host: 127.0.0.1
+    localhost
+remote:
+  hosts:
+    alex-laptop:
+      #ansible_host: 127.0.0.1
+      ansible_host: 192.168.71.150
