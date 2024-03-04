@@ -32,6 +32,9 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 " Octave
 Plug 'jvirtanen/vim-octave', { 'for': 'octave' }
 
+" Personal wiki
+Plug 'vimwiki/vimwiki'
+
 " Nginx
 Plug 'chr4/nginx.vim'
 call plug#end()
