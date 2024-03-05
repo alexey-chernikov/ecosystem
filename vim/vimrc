@@ -210,6 +210,9 @@ try
 catch
 endtry
 
+" Wiki
+let g:vimwiki_list = [{'path': '~/disk/info/wiki', 'path_html': '~/disk/info/wiki/html'}]
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
