@@ -8,3 +8,22 @@
    - name: Print message
      ansible.builtin.debug:
       msg: Hello world
+
+   - name: Install required packages
+     ansible.builtin.apt:
+       update_cache: true
+       pkg:
+         - curl
+         - git
+         - iotop
+         - htop
+         - mc
+         - ncdu
+         - nmap
+         - p7zip
+         - pv
+         - tig
+         - tmux
+         - vim
+         - zsh
+         - whois
