@@ -9,9 +9,12 @@
      ansible.builtin.debug:
       msg: Hello world
 
-   - name: Install required packages
+   - name: Update package cache
      ansible.builtin.apt:
        update_cache: true
+
+   - name: Install required packages
+     ansible.builtin.apt:
        pkg:
          - curl
          - git
