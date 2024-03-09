@@ -30,3 +30,9 @@
          - vim
          - zsh
          - whois
+
+   - name: Checkout ecosystem repository
+     ansible.builtin.git:
+       repo: https://github.com/alexey-chernikov/ecosystem
+       dest: ~/.ecosystem
+       force: no
