@@ -10,10 +10,12 @@
       msg: Hello world
 
    - name: Update package cache
+     become: true
      ansible.builtin.apt:
        update_cache: true
 
    - name: Install required packages
+     become: true
      ansible.builtin.apt:
        pkg:
          - curl
@@ -33,6 +35,6 @@
 
    - name: Checkout ecosystem repository
      ansible.builtin.git:
-       repo: https://github.com/alexey-chernikov/ecosystem
+       repo: git@github.com:alexey-chernikov/ecosystem
        dest: ~/.ecosystem
        force: no
