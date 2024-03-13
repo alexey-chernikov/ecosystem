@@ -81,5 +81,9 @@ Host isup_test_apps2
 Host ha
   User root
   Hostname homeassistant.local
+Host rus
+  User alex
+  Hostname techinform.dev
+  Port 2222
 Host nomad
   User root
