@@ -91,3 +91,9 @@ Host media.ext
   Port 42138
 Host nomad
   User root
+Host router.ext
+  User root
+  Hostname chernikov.online
+  Port 42122
+  HostKeyAlgorithms +ssh-rsa
+  PubkeyAcceptedKeyTypes +ssh-rsa
