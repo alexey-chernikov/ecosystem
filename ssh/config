@@ -6,8 +6,6 @@ Host dg
 Host dm
   User deploy
   HostName mark.moda
-Host g
-  HostName german.server.techinform.dev
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
