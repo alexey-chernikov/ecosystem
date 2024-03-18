@@ -6,9 +6,6 @@ Host dm
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
-Host php-server
-  ProxyCommand ssh -q german.server.techinform.dev nc %h %p $*
-  HostName php-server
 Host dc
   Hostname champion.server.techinform.dev
   User deploy
