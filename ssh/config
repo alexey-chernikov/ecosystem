@@ -6,9 +6,6 @@ Host dm
 #Host *
 #  ControlMaster auto
 #  ControlPath /tmp/%r@%h:%p
-Host dc
-  Hostname champion.server.techinform.dev
-  User deploy
 Host mega
   Hostname 10.236.24.27
   User techinform
