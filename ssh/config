@@ -9,9 +9,6 @@ Host dm
 Host mega
   Hostname 10.236.24.27
   User techinform
-Host erbp.ru
-  ProxyCommand ssh -q techinform.dev nc %h %p $*
-  Hostname erbp.ru
 Host loga
   User loga-group
   Hostname loga.server.techinform.dev
