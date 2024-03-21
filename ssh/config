@@ -9,9 +9,6 @@ Host dm
 Host mega
   Hostname 10.236.24.27
   User techinform
-Host loga
-  User loga-group
-  Hostname loga.server.techinform.dev
 Host t
   Hostname techinform.dev
 Host pcprto.ru
