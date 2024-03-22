@@ -31,12 +31,6 @@ Host bash
 Host dbash
   User deploy
   Hostname bash.vpn
-Host qa1
-  User dashboard
-  Hostname qa-1.adjust.com
-Host qa2
-  User dashboard
-  Hostname qa-2.adjust.com
 Host prod
   User dashboard
   Hostname dash.adjust.com
