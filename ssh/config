@@ -27,9 +27,6 @@ Host bash
 Host dbash
   User deploy
   Hostname bash.vpn
-Host prod
-  User dashboard
-  Hostname dash.adjust.com
 Host staging
   User dashboard
   Hostname staging.adjust.com
