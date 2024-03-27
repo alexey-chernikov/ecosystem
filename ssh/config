@@ -10,7 +10,9 @@ Host mega
   Hostname 10.236.24.27
   User techinform
 Host t
+  User alex
   Hostname techinform.dev
+  Port 2222
 Host pcprto.ru
   User root
   Port 44222
@@ -44,10 +46,6 @@ Host isup_test_apps2
 Host ha
   User root
   Hostname homeassistant.local
-Host rus
-  User alex
-  Hostname techinform.dev
-  Port 2222
 Host media.ext
   User alex
   Hostname chernikov.online
