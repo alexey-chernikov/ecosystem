@@ -19,9 +19,6 @@ Host pcprto.ru
   IdentityFile ~/.ssh/pcprto
 Host router
   User root
-Host dbash
-  User deploy
-  Hostname bash.vpn
 Host isup_prod_apps1
   User chernikov
   Hostname 10.12.129.3 
