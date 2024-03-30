@@ -52,3 +52,6 @@ Host router.ext
   Port 42122
   HostKeyAlgorithms +ssh-rsa
   PubkeyAcceptedKeyTypes +ssh-rsa
+Host alpha.ext
+  Hostname chernikov.online
+  Port 42123
