@@ -55,3 +55,6 @@ Host router.ext
 Host alpha.ext
   Hostname chernikov.online
   Port 42123
+Host beta.ext
+  Hostname chernikov.online
+  Port 42124
