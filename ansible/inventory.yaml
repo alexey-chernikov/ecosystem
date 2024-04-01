@@ -6,3 +6,8 @@ remote:
     alex-laptop:
       #ansible_host: 127.0.0.1
       ansible_host: 192.168.71.150
+servers:
+  hosts:
+    - alpha.lan
+    - beta.lan
+    - gamma.lan
