@@ -58,3 +58,5 @@ Host alpha.ext
 Host beta.ext
   Hostname chernikov.online
   Port 42124
+Host rails.server.techinform.dev
+  Port 2222
