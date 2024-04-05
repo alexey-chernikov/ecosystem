@@ -1,0 +1,9 @@
+# Install/refresh microk8s for specific version
+
+- name: Install microk8s
+  become: yes
+  community.general.snap:
+    name: microk8s
+    classic: true
+    channel: "{{ k8s_version }}/stable"
+
