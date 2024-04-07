@@ -8,6 +8,6 @@ remote:
       ansible_host: 192.168.71.150
 servers:
   hosts:
-    - alpha.lan
-    - beta.lan
-    - gamma.lan
+    alpha.lan:
+    beta.lan:
+    gamma.lan:
