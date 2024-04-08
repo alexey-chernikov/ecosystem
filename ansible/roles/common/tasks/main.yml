@@ -1,0 +1,26 @@
+- name: Update package cache
+  become: true
+  ansible.builtin.apt:
+    update_cache: true
+    upgrade: yes
+
+
+- name: Install required apt packages
+  become: true
+  ansible.builtin.apt:
+    pkg:
+      - curl
+      - git
+      - iotop
+      - htop
+      - mc
+      - ncdu
+      - nmap
+      - p7zip
+      - pv
+      - tig
+      - tmux
+      - vim
+      - zsh
+      - whois
+
