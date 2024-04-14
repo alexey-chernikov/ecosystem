@@ -2,13 +2,6 @@
   hosts: local
   connection: local
   tasks:
-   - name: Ping my hosts
-     ansible.builtin.ping:
-
-   - name: Print message
-     ansible.builtin.debug:
-      msg: Hello world
-
    - name: Update package cache
      become: true
      ansible.builtin.apt:
