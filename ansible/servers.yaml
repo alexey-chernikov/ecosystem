@@ -1,0 +1,13 @@
+- name: Servers setup
+  hosts: servers
+  #connection: local
+  roles:
+    - common
+    - role: k8s
+      vars:
+        k8s_version: 1.31
+  tasks:
+   - name: Update package cache
+     become: true
+     ansible.builtin.apt:
+       update_cache: true
