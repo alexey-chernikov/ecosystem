@@ -1,5 +1,10 @@
 # Install/refresh microk8s for specific version
 
+- name: Install required apt packages
+  ansible.builtin.apt:
+    pkg:
+      - nfs-common
+
 - name: Install microk8s
   become: yes
   community.general.snap:
