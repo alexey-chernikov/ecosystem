@@ -1,0 +1,6 @@
+- name: Developer setup
+  hosts: local
+  connection: local
+  roles:
+    - common
+    - developer
